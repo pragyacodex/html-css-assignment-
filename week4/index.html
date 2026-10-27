@@ -12,24 +12,77 @@
 
     <p>Join our Tech Club and explore technology with us!</p>
 
-    <form>
-        <label for="name">Full Name:</label>
-        <input type="text" id="name" name="name" required>
+    
+<form>
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" required>
 
-        <br><br>
+    <br><br>
 
-        <label for="email">Email Address:</label>
-        <input type="email" id="email" name="email" required>
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required>
 
-        <br><br>
+    <br><br>
 
-        <label for="password">Password:</label>
-        <input type="password" id="password" name="password" required>
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
 
-        <br><br>
+    <br><br>
 
-        <button type="submit">Register</button>
-    </form>
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone">
+
+    <br><br>
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob">
+
+    <br><br>
+
+    <p>Choose your membership:</p>
+    <input type="radio" id="beginner" name="membership" value="beginner">
+    <label for="beginner">Beginner</label>
+
+    <input type="radio" id="advanced" name="membership" value="advanced">
+    <label for="advanced">Advanced</label>
+
+    <br><br>
+
+    <p>Choose your interests:</p>
+    <input type="checkbox" id="coding" name="interests" value="coding">
+    <label for="coding">Coding</label>
+
+    <input type="checkbox" id="robotics" name="interests" value="robotics">
+    <label for="robotics">Robotics</label>
+
+    <input type="checkbox" id="web" name="interests" value="web-development">
+    <label for="web">Web Development</label>
+
+    <br><br>
+
+    <label for="year">Year of Study:</label>
+    <select id="year" name="year">
+        <option value="">Select your year</option>
+        <option value="1">First Year</option>
+        <option value="2">Second Year</option>
+        <option value="3">Third Year</option>
+        <option value="4">Fourth Year</option>
+    </select>
+
+    <br><br>
+
+    <label for="reason">Why do you want to join?</label>
+    <br>
+    <textarea id="reason" name="reason" rows="4" cols="30"></textarea>
+
+    <br><br>
+
+    <button type="submit">Register</button>
+    <button type="reset">Reset</button>
+</form>
+
+
+        
 
 </body>
 </html>
