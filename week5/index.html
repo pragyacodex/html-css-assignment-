@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Register for the Tech Club to explore coding, robotics, and web development.">
+    <meta name="keywords" content="Tech Club, coding, robotics, web development">
+    <meta name="author" content="Pragya">
+    <title>Tech Club Registration</title>
+    <link rel="icon" type="image/svg+xml" href="favicon.svg">
+    
+    <style>
+        body {
+            background-color: #f4f7fb;
+            color: #243047;
+            font-family: Arial, sans-serif;
+        }
+
+        h1 {
+            color: #2563eb;
+        }
+
+        nav {
+            background-color: #dbeafe;
+            padding: 15px;
+        }
+
+        nav a {
+            color: #1d4ed8;
+            text-decoration: none;
+            margin-right: 12px;
+            font-weight: bold;
+        }
+    </style>
+
+</head>
+
+<body>
+    
+    <nav>
+        <a href="home.html">Home</a> |
+        <a href="about.html">About</a> |
+        <a href="index.html">Registration</a> |
+        <a href="contact.html">Contact</a>
+    </nav>
+
+    <hr>
+
+
+    <h1>Tech Club Registration</h1>
+
+    <p>Join our Tech Club and explore technology with us!</p>
+
+    
+<form>
+    <label for="name">Full Name:</label>
+    <input type="text" id="name" name="name" required>
+
+    <br><br>
+
+    <label for="email">Email Address:</label>
+    <input type="email" id="email" name="email" required>
+
+    <br><br>
+
+    <label for="password">Password:</label>
+    <input type="password" id="password" name="password" required>
+
+    <br><br>
+
+    <label for="phone">Phone Number:</label>
+    <input type="tel" id="phone" name="phone">
+
+    <br><br>
+
+    <label for="dob">Date of Birth:</label>
+    <input type="date" id="dob" name="dob">
+
+    <br><br>
+
+    <p>Choose your membership:</p>
+    <input type="radio" id="beginner" name="membership" value="beginner">
+    <label for="beginner">Beginner</label>
+
+    <input type="radio" id="advanced" name="membership" value="advanced">
+    <label for="advanced">Advanced</label>
+
+    <br><br>
+
+    <p>Choose your interests:</p>
+    <input type="checkbox" id="coding" name="interests" value="coding">
+    <label for="coding">Coding</label>
+
+    <input type="checkbox" id="robotics" name="interests" value="robotics">
+    <label for="robotics">Robotics</label>
+
+    <input type="checkbox" id="web" name="interests" value="web-development">
+    <label for="web">Web Development</label>
+
+    <br><br>
+
+    <label for="year">Year of Study:</label>
+    <select id="year" name="year">
+        <option value="">Select your year</option>
+        <option value="1">First Year</option>
+        <option value="2">Second Year</option>
+        <option value="3">Third Year</option>
+        <option value="4">Fourth Year</option>
+    </select>
+
+    <br><br>
+
+    <label for="reason">Why do you want to join?</label>
+    <br>
+    <textarea id="reason" name="reason" rows="4" cols="30"></textarea>
+
+    <br><br>
+
+    <button type="submit">Register</button>
+    <button type="reset">Reset</button>
+</form>
+
+<hr>
+
+<h2>Upcoming Tech Club Events</h2>
+
+<table border="1">
+    <thead>
+        <tr>
+            <th>Event Name</th>
+            <th>Date</th>
+            <th>Venue</th>
+        </tr>
+    </thead>
+
+    <tbody>
+        <tr>
+            <td>Web Development Workshop</td>
+            <td>10 November 2026</td>
+            <td>Computer Lab</td>
+        </tr>
+
+        <tr>
+            <td>Coding Competition</td>
+            <td>15 November 2026</td>
+            <td>Seminar Hall</td>
+        </tr>
+
+        <tr>
+            <td>Robotics Exhibition</td>
+            <td>20 November 2026</td>
+            <td>Main Auditorium</td>
+        </tr>
+    </tbody>
+
+    <tfoot>
+        <tr>
+            <td colspan="3">More events coming soon!</td>
+        </tr>
+    </tfoot>
+</table>
+
+
+        
+
+</body>
+</html>
