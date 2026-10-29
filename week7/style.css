@@ -44,3 +44,46 @@ body {
     border-radius: 8px;
     text-decoration: none;
 }
+
+/* Task 7.2: Centred hero banner */
+
+.hero {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    min-height: 380px;
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #eff6ff;
+}
+
+.hero-content {
+    max-width: 700px;
+}
+
+.eyebrow {
+    color: #2563eb;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 2px;
+}
+
+.hero h1 {
+    font-size: 42px;
+    margin: 12px 0;
+}
+
+.hero p {
+    line-height: 1.7;
+}
+
+.hero-button {
+    display: inline-block;
+    margin-top: 12px;
+    padding: 12px 20px;
+    background-color: #2563eb;
+    color: white;
+    border-radius: 8px;
+    text-decoration: none;
+}
