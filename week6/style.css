@@ -103,3 +103,14 @@ body {
 .profile-card.purple-card .profile-button {
     background-color: #9333ea;
 }
+
+/* Task 6.3: Scrollable bio */
+
+.bio {
+    height: 120px;
+    overflow: auto;
+    text-align: left;
+    line-height: 1.6;
+    border-radius: 8px;
+    padding: 12px;
+}
