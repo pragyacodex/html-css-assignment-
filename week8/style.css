@@ -49,11 +49,13 @@ body {
     padding: 10px;
 }
 
+
 .box-container {
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
     gap: 20px;
 }
+
 
 .dashboard-box {
     background-color: white;
