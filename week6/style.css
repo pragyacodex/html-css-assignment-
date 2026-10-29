@@ -114,3 +114,27 @@ body {
     border-radius: 8px;
     padding: 12px;
 }
+
+/* Task 6.4: Sticky header and fixed button */
+
+.top-bar {
+    position: sticky;
+    top: 0;
+    z-index: 100;
+}
+
+.floating-button {
+    position: fixed;
+    right: 24px;
+    bottom: 24px;
+    width: 56px;
+    height: 56px;
+    border: none;
+    border-radius: 50%;
+    background-color: #16a34a;
+    color: white;
+    font-size: 32px;
+    cursor: pointer;
+    z-index: 200;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
