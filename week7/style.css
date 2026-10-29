@@ -132,3 +132,20 @@ body {
     color: #64748b;
     line-height: 1.6;
 }
+
+@media (max-width: 600px) {
+    .navbar {
+        flex-wrap: wrap;
+        gap: 16px;
+        padding: 16px 5%;
+    }
+
+    .nav-links {
+        flex-wrap: wrap;
+        gap: 14px;
+    }
+
+    .hero h1 {
+        font-size: 32px;
+    }
+}
