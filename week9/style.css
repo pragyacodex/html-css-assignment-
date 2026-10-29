@@ -1,0 +1,170 @@
+
+/* Base styles: mobile first */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #1e293b;
+    background-color: #ffffff;
+    font-size: 1rem;
+    line-height: 1.6;
+}
+
+img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+}
+
+.navbar {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 1rem;
+    padding: 1rem;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.logo {
+    font-size: 1.5rem;
+    font-weight: bold;
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.nav-links a {
+    color: #334155;
+    text-decoration: none;
+}
+
+.nav-button,
+.hero-button {
+    display: inline-block;
+    padding: 0.7rem 1rem;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 0.5rem;
+}
+
+.hero {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 2rem;
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: #eff6ff;
+}
+
+.hero h1 {
+    font-size: 2rem;
+    line-height: 1.2;
+}
+
+.eyebrow {
+    color: #2563eb;
+    font-size: 0.8rem;
+    font-weight: bold;
+    letter-spacing: 0.1rem;
+}
+
+.hero-image img {
+    width: 100%;
+    border-radius: 1rem;
+}
+
+.features {
+    padding: 2rem 1rem;
+}
+
+.features h2,
+.about h2 {
+    font-size: 1.7rem;
+    text-align: center;
+}
+
+.feature-grid {
+    display: grid;
+    grid-template-columns: minmax(0, 1fr);
+    gap: 1rem;
+}
+
+.feature-card {
+    padding: 1.25rem;
+    border: 1px solid #dbe3ef;
+    border-radius: 0.75rem;
+}
+
+.feature-icon {
+    font-size: 2rem;
+}
+
+.about {
+    padding: 2rem 1rem;
+    text-align: center;
+    background-color: #f1f5f9;
+}
+
+.footer {
+    padding: 1rem;
+    text-align: center;
+    background-color: #1e293b;
+    color: white;
+    font-size: 0.875rem;
+}
+
+/* Tablet: 768px and wider */
+
+@media (min-width: 768px) {
+    .navbar {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .hero {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+        align-items: center;
+        padding: 3rem 2rem;
+        text-align: left;
+    }
+
+    .hero h1 {
+        font-size: 2.5rem;
+    }
+
+    .features {
+        padding: 3rem 2rem;
+    }
+
+    .feature-grid {
+        grid-template-columns: repeat(2, minmax(0, 1fr));
+    }
+}
+
+/* Laptop: 1024px and wider */
+
+@media (min-width: 1024px) {
+    .hero {
+        padding: 4rem;
+    }
+
+    .features {
+        padding: 4rem;
+    }
+
+    .feature-grid {
+        grid-template-columns: repeat(3, minmax(0, 1fr));
+    }
+}
