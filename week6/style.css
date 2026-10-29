@@ -47,3 +47,59 @@ body {
     padding: 10px 16px;
     margin-top: 12px;
 }
+
+/* Task 6.2: Profile card styling */
+
+.profile-card {
+    text-align: center;
+    border-radius: 18px;
+    box-shadow: 0 6px 18px rgba(15, 23, 42, 0.10);
+}
+
+.avatar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%;
+    font-size: 38px;
+    font-weight: bold;
+}
+
+.role {
+    color: #64748b;
+    margin-top: 4px;
+}
+
+.profile-button {
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+}
+
+/* Blue colour version */
+
+.profile-card.blue-card {
+    border-color: #2563eb;
+}
+
+.profile-card.blue-card .avatar {
+    background-color: #dbeafe;
+    border-color: #2563eb;
+}
+
+/* Purple colour version */
+
+.profile-card.purple-card {
+    border-color: #9333ea;
+}
+
+.profile-card.purple-card .avatar {
+    background-color: #f3e8ff;
+    border-color: #9333ea;
+}
+
+.profile-card.purple-card .profile-button {
+    background-color: #9333ea;
+}
