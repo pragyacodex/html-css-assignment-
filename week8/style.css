@@ -1,5 +1,5 @@
 
-/* Task 8.1: Basic CSS Grid */
+/* Basic page styling */
 
 * {
     box-sizing: border-box;
@@ -12,35 +12,16 @@ body {
     background-color: #f1f5f9;
 }
 
+/* Main dashboard layout */
 
 .dashboard {
     display: grid;
-    grid-template-columns: 220px minmax(0, 1fr);
-    grid-template-areas:
-        "head head"
-        "side main"
-        "foot foot";
-    gap: 20px;
-    padding: 20px;
+    grid-template-columns: 200px minmax(0, 1fr);
+    gap: 16px;
+    padding: 16px;
 }
 
-.head {
-    grid-area: head;
-}
-
-.side {
-    grid-area: side;
-}
-
-.main {
-    grid-area: main;
-    min-width: 0;
-}
-
-.foot {
-    grid-area: foot;
-}
-
+/* Header */
 
 .head {
     grid-column: 1 / -1;
@@ -49,6 +30,8 @@ body {
     padding: 20px;
     border-radius: 10px;
 }
+
+/* Sidebar */
 
 .side {
     background-color: white;
@@ -67,25 +50,35 @@ body {
     color: #334155;
 }
 
+/* Main content */
+
 .main {
     min-width: 0;
     padding: 10px;
 }
 
+/* Dashboard cards */
 
 .box-container {
     display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
-    gap: 20px;
+    grid-template-columns: repeat(4, minmax(0, 1fr));
+    gap: 16px;
 }
-
 
 .dashboard-box {
+    min-width: 0;
     background-color: white;
-    padding: 20px;
-    border-radius: 10px;
+    padding: 16px;
     border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    overflow-wrap: anywhere;
 }
+
+.icon {
+    font-size: 24px;
+}
+
+/* Footer */
 
 .foot {
     grid-column: 1 / -1;
