@@ -1,0 +1,46 @@
+/* Task 7.1: Flexbox navigation bar */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    color: #1e293b;
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 6%;
+    background-color: #ffffff;
+    border-bottom: 1px solid #e2e8f0;
+}
+
+.logo {
+    font-size: 26px;
+    font-weight: bold;
+    color: #2563eb;
+    text-decoration: none;
+}
+
+.nav-links {
+    display: flex;
+    align-items: center;
+    gap: 28px;
+}
+
+.nav-links a {
+    color: #334155;
+    text-decoration: none;
+}
+
+.nav-button {
+    background-color: #2563eb;
+    color: white;
+    padding: 11px 18px;
+    border-radius: 8px;
+    text-decoration: none;
+}
