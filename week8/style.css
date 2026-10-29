@@ -71,18 +71,38 @@ body {
     gap: 16px;
 }
 
+
 .dashboard-box {
+    display: flex;
+    align-items: center;
+    gap: 12px;
     min-width: 0;
     background-color: white;
     padding: 16px;
     border: 1px solid #e2e8f0;
     border-radius: 10px;
-    overflow-wrap: anywhere;
 }
 
 .icon {
     font-size: 24px;
+    flex-shrink: 0;
 }
+
+.box-content {
+    min-width: 0;
+    overflow-wrap: anywhere;
+}
+
+.box-content h3 {
+    margin: 0 0 8px;
+    font-size: 16px;
+}
+
+.box-content p {
+    margin: 0;
+    color: #64748b;
+}
+
 
 /* Footer */
 
